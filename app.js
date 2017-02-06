@@ -1,0 +1,46 @@
+//app.js
+App({
+  globalData:{
+    navText:[
+      {flag:'active',text:'文学'},
+      {flag:'',text:'小说'},
+      {flag:'',text:'励志'},
+      {flag:'',text:'历史'}
+    ],
+    url:"https://api.douban.com/v2/book/search?",
+    booksData:[
+      {
+        book:{
+        q:"经典文学",
+        count:10,
+        start:0
+      }
+      },
+      {
+        book:{
+        q:"小说",
+        count:10,
+        start:0
+      }
+      },
+      {
+        book:{
+        q:"经典励志",
+        count:10,
+        start:0
+      }
+      },
+      {
+        book:{
+        q:"历史",
+        count:10,
+        start:0
+      }
+      }
+    ]
+  },
+  onLaunch: function () {
+    
+  },
+  
+})

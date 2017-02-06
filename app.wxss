@@ -1,0 +1,38 @@
+/**app.wxss**/
+view{
+  font:14px '微软雅黑';
+  color:deepskyblue;
+  box-sizing: border-box;
+}
+.pull-left{
+  float:left;
+}
+.pull-right{
+  float:right;
+}
+.clearfix::after {
+  content:'';
+  display: block;
+  height:0;
+  line-height: 0;
+  visibility: hidden;
+  clear:both;
+}
+.nav{
+  border:2rpx solid deepskyblue;
+  margin: 0 auto;
+  border-radius: 10rpx;
+}
+.nav text{
+  display: inline-block;
+  width:25%;
+  text-align: center;
+  box-sizing: border-box;
+}
+.nav text+text {
+  border-left:2rpx solid deepskyblue;
+}
+.nav .active{
+  background:deepskyblue;
+  color:#fff;
+}

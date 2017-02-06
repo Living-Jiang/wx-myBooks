@@ -1,0 +1,11 @@
+ <view class='detail'>
+    <view>
+        <image src="{{detail.images.large}}"></image>
+      </view>
+        <view class="title">{{detail.title}}<view class='pull-right'>{{detail.rating.average}}</view></view>
+        <view class="fontS">作者：{{detail.author[0]}}</view>
+        <view class="fontS">价格：{{detail.price}}</view>
+        <view class="fontS">出版社/日期：{{detail.publisher}}/{{detail.pubdate}}</view>
+        <view class="summary">书籍简介：{{detail.summary}}</view>
+ </view>
+

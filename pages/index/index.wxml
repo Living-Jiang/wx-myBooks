@@ -1,0 +1,24 @@
+
+  <view class="header">
+  <include src="../../utils/nav.wxml"/>
+</view>
+<view class="content">
+  <view class="search" wx:if="{{isSearch}}">
+  <include src="../../utils/search.wxml"/>
+</view>
+  <view wx:if="{{isListShow}}"> 
+    <include src="../../utils/list.wxml"/>
+  </view>
+  <view wx:else>
+    <include src="../../utils/detail.wxml"/>
+  </view>
+</view>
+
+<!--加载动画-->
+<view class="mask" wx:if="{{isLoading}}">
+    <view class="spinner">
+        <text class="spinner-loader">Loading…</text>
+    </view>
+</view>
+
+

@@ -1,0 +1,2 @@
+<input placeholder="search" bindconfirm="search" bindinput="changeVal" bindblur="hideSearch" value="{{searchVal}}" />
+<text class="searchBut" bindtap="search">search</text>

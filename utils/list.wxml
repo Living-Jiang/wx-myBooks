@@ -1,0 +1,11 @@
+<view wx:for="{{books.books}}" class='clearfix book' id="{{item.url}}" bindtap="getDetail">
+      <view class='pull-left'>
+        <image src="{{item.image}}"></image>
+      </view>
+      <view class='pull-left right'>
+        <view class="title">{{item.title}}<view class='pull-right'>{{item.rating.average}}</view></view>
+        <view class="fontS">作者：{{item.author[0]}}</view>
+        <view class="fontS">价格：{{item.price}}</view>
+        <view class="fontS">出版社/日期：{{item.publisher}}/{{item.pubdate}}</view>
+      </view>
+</view>

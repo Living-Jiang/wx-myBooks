@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTitleText": "Mybooks",
+    "navigationBarTextStyle":"deepskyblue",
+    "enablePullDownRefresh":true
+  }
+}
