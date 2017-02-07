@@ -21,4 +21,8 @@
     </view>
 </view>
 
+<view class="history">
+  <include src="../../utils/history.wxml"/>
+</view>
+
 

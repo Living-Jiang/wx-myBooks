@@ -1,0 +1,6 @@
+<text class="forword pull-right" bindtap="go" wx:if="{{!forwordDisable}}">
+    前进
+</text>
+<text class="back" bindtap="back" wx:if="{{!backDisable}}">
+    后退
+</text>

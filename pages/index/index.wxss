@@ -113,3 +113,27 @@
   right:48rpx;
   top:19rpx;
 }
+
+.history {
+  position: fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+}
+.history text{
+  display:inline-block;
+  height:24px;
+  line-height:8px;
+  font-size:12px;
+  text-align:center;
+  border:1px solid lightskyblue;
+  width:15%;
+  border-radius: 30rpx;
+  background:#fff;
+}
+.history .forword{
+  margin:0 40rpx;
+}
+.history .back {
+  margin:0 0 10rpx 40rpx;
+}
