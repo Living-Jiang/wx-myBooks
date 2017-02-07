@@ -5,6 +5,7 @@ var app = getApp(),
     booksData= app.globalData.booksData,
     navText=app.globalData.navText,
     booksCache = {},
+    detailCache= {},
     historyNum=-1;
 Page({
   data: {
@@ -80,7 +81,7 @@ Page({
       });
     }
   },
-  //获取具体的信息
+  //获取具体的信息detail
   getDetail:function(e) {
     // 记录事件
     this.saveEvent("getDetail",[e]);
@@ -90,17 +91,25 @@ Page({
       detail:{}
     });
     var url = e.currentTarget.id;
-    wx.request({
+    if(detailCache[url]) {
+      that.setData({
+        detail:detailCache[url]
+      });
+    }else{
+      wx.request({
       'url':url,
       header: {
       'content-type': 'application/json'
-  },
-  success: function(res) {
-    that.setData({
-      detail:res.data
+    },
+    success: function(res) {
+      that.setData({
+        detail:res.data
+      });
+      // 缓存detail数据
+      detailCache[url]=res.data;
+    }
     });
-  }
-    });
+    }
   },
   onLoad: function () {
     this.TapToGetbooks();
